@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<style type="text/css">
+		
+		* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+
+	display: grid;
+	/*border: 2px solid green;*/
+	margin: 0 auto;
+	width: 80%;
+	grid-template-columns: 100%;
+
+}
+h1 {
+		text-shadow: 5px 2px 4px grey;
+		text-align: center;
+		font-size: 50px;
+		font-weight: bolder;
+	}
+
+h1 a {
+	text-decoration: none;
+	color: red;
+
+}
+a:hover{
+	text-decoration: underline;
+}
+.header {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.navbar {
+	/*border: 2px solid red;*/
+	grid-column-start: 1;
+	grid-column-end: 3;	
+	text-align: center;
+	text-decoration: none;
+	background-color: grey;
+}
+
+.navbar nav li {
+	text-decoration: none;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.navbar nav li a {
+	text-decoration: none;
+	padding-right: 10px;
+	font-weight: bolder;
+	color: white;
+	
+}
+
+.navbar nav li a:hover {
+	color: red;
+}
+.header {
+	/*border: 2px solid blue;*/
+}
+.left-text {
+	/*border: 2px solid magenta;*/
+}
+.right-image {
+	/*border: 2px solid seagreen;*/
+}
+.right-text {
+	/*border: 2px solid pink;*/
+}
+.left-image {
+	/*border: 2px solid yellow;*/
+}
+form { 
+	margin-top: 10em;
+	margin-bottom: 1em;
+	border: solid 2px #305704;
+	padding: 1em;
+	font-size: 16px;
+	height: 600px;
+	width: 100%
+	margin-right: auto;
+	margin-left: auto;
+	}
+textarea { 
+	  border: solid 2px #305704;
+	  display: block:
+	  }
+select {
+	display: block:
+	}
+input.button {
+		color: #305704;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 4px;
+		background-color: #f0eea4;
+		border: 1px solid #305704;
+		display: inline;
+		}
+		fieldset {
+			height: 200px;
+			margin-top: 50px;
+		}
+	.heading {
+		text-align: center;
+}
+
+	</style>
+</head>
+<body>
+	<h1>Contact Form</h1>
+	<div class="wrapper">
+		<div class="navbar">
+				<nav>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</nav>
+			</div>
+			
+			
+
+			<div class="main-image">
+<h3> My Contact Info:
+<p>Email: allan.john@</p>
+<p>Ph: 267-205-3497</p>
+</h3><form id = "survey" name = "survey" method = "post" action = "javascript:submitform();">
+<fieldset class = "labelfloatleft"><legend>Contact Information</legend>
+<label for = "firstname">Firstname</label>
+<input type = "text" name = "firstname" id = "firstname" class = "text" />
+<label for = "lastname">Lastname</label>
+<input type = "text" name = "lastname" id = "lastname" class = "text" />
+<label for = "emailaddress">Email Address</label>
+<input type = "email" name = "emailaddress" id = "emailaddress" size = "40" class = "text" placeholder = "name@gmail.com" />
+</fieldset>
+
+<fieldset><legend>Send a message</legend>
+<label for = "subject">Subject</label>
+<select name = "subject" id = "subject">
+<option value = "info">Complaints/Concerns</option>
+<option value  = "favorites" selected = "selected">Compliments/Suggestions</option>
+<option value = "other">Other</option>
+</select>
+<label for = "message">Message</label>
+<textarea name = "message" id = "message" rows = "10" cols = "45"></textarea>
+</fieldset>
+<input type = "submit" value = "Send information" class = "button" />
+<input type = "reset" value = "Reset" class = "button" />
+</form></div>
+			<!--<div class="left-text"></div>
+			<div class="right-image"></div>
+			<div class="right-text"></div>
+			<div class="left-image"></div>-->
+
+
+			<div class="navbar">
+				<nav>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</nav>
+			</div>
+
+		
+
+
+
+
+
+
+
+	</div>
+
+</body>
+</html>

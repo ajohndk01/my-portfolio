@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.item1 {
+  background: url("images/fam_1.jpg");
+  background-size: cover;
+
+}
+.item2 {
+  background: url("images/son.jpg");
+  background-size: cover;
+
+}
+.item3 {
+  background: url("images/3.jpg");
+  background-size: cover;
+
+}
+.item4 {
+  background: url("images/4.jpg");
+  background-size: cover;
+
+}
+.item5 {
+  background: url("images/5.jpg");
+  background-size: cover;
+
+}
+.item6 {
+  background: url("images/6.jpg");
+  background-size: cover;
+
+}
+.item7 {
+  background: url("images/7.jpg");
+  background-size: cover;
+
+}
+.item8 {
+  background: url("images/8.jpg");
+  background-size: cover;
+
+}
+.item9 {
+  background: url("images/9.jpg");
+  background-size: cover;
+
+}
+.item10 {
+  background: url("images/10.jpg");
+  background-size: cover;
+
+}
+.item11 {
+  background: url("images/11.jpg");
+  background-size: cover;
+
+}
+.item12 {
+  background: url("images/12.jpg");
+  background-size: cover;
+
+}
+.item13 {
+  background: url("images/14.jpg");
+  background-size: cover;
+
+}
+.wrapper {
+  margin: 0 auto;
+  width: 800px;
+  background-color: yellow;
+  height: 600px;
+  position: relative;
+  border-radius: 15px;
+}
+h1:hover {
+  color: white;
+}
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.sidenav2 {
+
+  top: 0px;
+  border-radius: 15px 0 15px 0;
+}
+    .sidenav {
+    position: absolute;
+    height: 150px;
+    width: 0;
+   
+    /*top: 134px;*/
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 10px;
+   margin-top: 96px;
+   grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
+}
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding:20px 0;
+  font-size: 30px;
+}
+  .item1 { 
+   
+    grid-row-start: 1;
+    grid-row-end: 6;
+     grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+
+}
+.item1 {
+  grid-area: myArea;
+}
+
+.bar {
+  width: 100;
+  height: 40px;
+  background-color: black;
+  opacity: 0.5;
+  
+  margin-top: 0px;
+  border-radius: 0 0 15px 15px;
+}
+
+.bar2 {
+  width: 100;
+  height: 60px;
+  background-color: black;
+  opacity: 0.5;
+  
+  margin-top: 0px;
+  margin-bottom: 5px;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+  bottom: 15px;
+  color: white;
+  text-align: center;
+}
+
+@media all and (min-width: 350px;) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  body{ width: 100%
+    height: auto; }
+  .grid-container {
+
+  }
+}
+@media all and (min-width: 350px; max-width: 800px;) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  body{ width: 100%;
+        height: 500px; }
+  .grid-container { 
+  }
+}
+
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <h1>Gallery</h1>
+      <div id="mySidenav" class="sidenav sidenav2">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <div class="grid-container">
+  <div class="item1">&copy;</div>
+  <div class="item2">&copy;</div>
+  <div class="item3">&copy;</div>  
+  <div class="item4">&copy;</div>
+  <div class="item5">&copy;</div>
+  <div class="item6">&copy;</div>
+  <div class="item7">&copy;</div>
+  <div class="item8">&copy;</div>
+  <div class="item9">&copy;</div>
+  <div class="item10">&copy;</div>
+  <div class="item11">&copy;</div>
+  <div class="item12">&copy;</div>
+  <div class="item13">&copy;</div>
+ </div>
+<div class="bar"></div>
+<div class="bar2">COPYRIGHT &copy; 2018<br /> CONTACT US @ web.developer.267@gmail.com</div>
+
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+</body>
+</html> 
